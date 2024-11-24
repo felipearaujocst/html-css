@@ -12,11 +12,19 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+            
         }
 
         td, th{
             border: 1px solid black;
             padding: 10px;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
         }
 
         .num{
@@ -26,6 +34,20 @@
         thead, tfoot{
             background-color: gray;
             color: white;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(odd){ /* 2n-1 */
+            background-color: rgb(245, 255, 105);
+        }
+
+        tbody > tr:nth-child(even){ /* 2n */
+            background-color: lightgray;
         }
     </style>
 </head>
@@ -42,10 +64,11 @@
                     tr, td, th 
      -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -81,13 +104,70 @@
                 <td> Ceará</td>
                 <td class="num">9.233.656</td>
             </tr>
+            <tr>
+                <td> Ceará</td>
+                <td class="num">9.233.656</td>
+            </tr>
+            <tr>
+                <td> Ceará</td>
+                <td class="num">9.233.656</td>
+            </tr>
+            <tr>
+                <td> Ceará</td>
+                <td class="num">9.233.656</td>
+            </tr>
+            <tr>
+                <td> Ceará</td>
+                <td class="num">9.233.656</td>
+            </tr>
+            <tr>
+                <td> Ceará</td>
+                <td class="num">9.233.656</td>
+            </tr>
+            <tr>
+                <td> Ceará</td>
+                <td class="num">9.233.656</td>
+            </tr>
+            <tr>
+                <td> Ceará</td>
+                <td class="num">9.233.656</td>
+            </tr>
+            <tr>
+                <td> Ceará</td>
+                <td class="num">9.233.656</td>
+            </tr>
             
 
         </tbody>
         <tfoot>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td class="num"><strong>212.235.124</strong></td>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At reprehenderit obcaecati quaerat, iusto fugit itaque. Incidunt tenetur atque officiis in. Necessitatibus minus consectetur reiciendis magni delectus velit eius labore eveniet.
+
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod aliquam ipsum saepe molestiae ipsa modi ea odio perferendis assumenda. Mollitia vero dolore cum reiciendis architecto corporis perferendis blanditiis eius laudantium!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum repudiandae ea esse nisi iste! Non, dolores minima. Incidunt assumenda praesentium vero laudantium odit dolorem a ipsa! Vel amet iste necessitatibus.
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde eaque rerum veniam doloribus maxime repellat voluptatem quisquam fugiat, suscipit perspiciatis, amet officiis voluptatum inventore cupiditate. Explicabo ut rem saepe doloremque?
+    </p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At reprehenderit obcaecati quaerat, iusto fugit itaque. Incidunt tenetur atque officiis in. Necessitatibus minus consectetur reiciendis magni delectus velit eius labore eveniet.
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod aliquam ipsum saepe molestiae ipsa modi ea odio perferendis assumenda. Mollitia vero dolore cum reiciendis architecto corporis perferendis blanditiis eius laudantium!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum repudiandae ea esse nisi iste! Non, dolores minima. Incidunt assumenda praesentium vero laudantium odit dolorem a ipsa! Vel amet iste necessitatibus.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde eaque rerum veniam doloribus maxime repellat voluptatem quisquam fugiat, suscipit perspiciatis, amet officiis voluptatum inventore cupiditate. Explicabo ut rem saepe doloremque?
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At reprehenderit obcaecati quaerat, iusto fugit itaque. Incidunt tenetur atque officiis in. Necessitatibus minus consectetur reiciendis magni delectus velit eius labore eveniet.
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod aliquam ipsum saepe molestiae ipsa modi ea odio perferendis assumenda. Mollitia vero dolore cum reiciendis architecto corporis perferendis blanditiis eius laudantium!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum repudiandae ea esse nisi iste! Non, dolores minima. Incidunt assumenda praesentium vero laudantium odit dolorem a ipsa! Vel amet iste necessitatibus.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde eaque rerum veniam doloribus maxime repellat voluptatem quisquam fugiat, suscipit perspiciatis, amet officiis voluptatum inventore cupiditate. Explicabo ut rem saepe doloremque?
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At reprehenderit obcaecati quaerat, iusto fugit itaque. Incidunt tenetur atque officiis in. Necessitatibus minus consectetur reiciendis magni delectus velit eius labore eveniet.
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod aliquam ipsum saepe molestiae ipsa modi ea odio perferendis assumenda. Mollitia vero dolore cum reiciendis architecto corporis perferendis blanditiis eius laudantium!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum repudiandae ea esse nisi iste! Non, dolores minima. Incidunt assumenda praesentium vero laudantium odit dolorem a ipsa! Vel amet iste necessitatibus.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde eaque rerum veniam doloribus maxime repellat voluptatem quisquam fugiat, suscipit perspiciatis, amet officiis voluptatum inventore cupiditate. Explicabo ut rem saepe doloremque?
+                </p>
 </body>
 </html>
