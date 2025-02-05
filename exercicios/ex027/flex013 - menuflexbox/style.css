@@ -69,20 +69,4 @@ article{
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.212);
 }
 
-@media screen and (max-width: 573px){
 
-    header{
-        flex-flow: column nowrap;
-    }
-
-    header > h1{
-        flex: auto;
-    }
-    nav{
-        flex-flow: column wrap;
-        width: 100%;
-        text-align: center;
-    }
-
-    
-}
