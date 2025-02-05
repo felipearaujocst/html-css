@@ -30,6 +30,10 @@ nav{
     gap: 10px;
 }
 
+header > h1{
+    flex: 0 0 200px;
+}
+
 li{
     list-style-type: none;
     padding: 10px;
@@ -69,6 +73,10 @@ article{
 
     header{
         flex-flow: column nowrap;
+    }
+
+    header > h1{
+        flex: auto;
     }
     nav{
         flex-flow: column wrap;
