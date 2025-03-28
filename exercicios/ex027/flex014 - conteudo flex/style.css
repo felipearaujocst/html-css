@@ -14,8 +14,13 @@ body{
     
 }
 
-p, h1, h2{
+h1, h2{
     margin-bottom: 10px;
+    text-align: left;
+}
+
+p{
+    margin-top: 10px;
     text-align: justify;
 }
 
@@ -24,18 +29,50 @@ header, .normal{
 }
 
 .flex-content{
+    display: flex;
+    flex-flow: column nowrap;
     background-color: rgb(173, 173, 173);
     padding: 20px;
 }
 
-.text-media, .media-text{
+.media-text{
     display: flex;
-    align-items: center;
-    gap: 20px;
+    flex-flow: row wrap-reverse;
+    justify-content: space-between;
+}
+
+.text-media{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
 
 }
 
-@media screen and (max-width: 992px){
+.text{
+    flex: 1 1 500px;
+    
+}
+
+.media{
+    flex: 1 0 400px;
+}
+
+.media img{
+    display: block;
+    margin: auto;
+    width: 300px;
+    padding: 10px;
+
+}
+
+.media iframe{
+    display: block;
+    margin: auto;
+    width: 90%;
+
+}
+
+/* @media screen and (max-width: 992px){
     .media-text{
         flex-direction: column-reverse;
     }
@@ -43,4 +80,4 @@ header, .normal{
     .text-media{
         flex-direction: column;
     }
-}
+} */
